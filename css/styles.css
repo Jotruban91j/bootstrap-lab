@@ -1,0 +1,72 @@
+/* css/styles.css */
+
+/* Global reset-ish */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #f8f9fa;
+}
+
+/* Hero styling */
+header#home {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
+}
+
+/* Feature icons */
+.feature-icon {
+  width: 64px;
+  height: 64px;
+  object-fit: contain;
+}
+
+/* Team photos */
+.team-photo {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+
+/* Cards */
+.card {
+  border: none;
+  border-radius: 0.75rem;
+  box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.05);
+}
+
+/* Buttons */
+.btn-primary {
+  background-color: #0d6efd;
+  border-color: #0d6efd;
+}
+
+/* Sections */
+section {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* Footer */
+footer {
+  background-color: #0b1220;
+  color: #ffffff;
+}
+
+/* Make headings centered on small screens */
+@media (max-width: 576px) {
+  header#home .display-5 {
+    font-size: 1.7rem;
+  }
+
+  .navbar-brand {
+    font-size: 1.1rem;
+  }
+
+  h2 {
+    text-align: center;
+  }
+}
